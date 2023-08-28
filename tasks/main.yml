@@ -1,0 +1,14 @@
+---
+   - name: Installation 5 packages
+     ansible.builtin.package:
+       name:
+         - nmap
+         - traceroute
+         - git
+         - vim
+         - chromium-browser
+         - grub-customizer
+         - htop
+         - apache2
+       state: present
+       update_cache: yes

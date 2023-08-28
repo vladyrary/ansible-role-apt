@@ -1,0 +1,28 @@
+  tasks:
+   - name: Installation 5 packages
+     ansible.builtin.package:
+       name:
+       loop:
+         - nmap
+         - traceroute
+         - httpd
+         - vim
+         - htop
+          state: present
+             become: true
+             update_cache: yes---
+# tasks file for Install_5_packages
+
+  tasks: 
+     - name: Installation 5 packages
+        ansible.builtin.package:
+            name:
+            loop:
+             - nmap
+             - traceroute
+             - httpd
+             - vim
+             - htop
+             state: present
+             become: true
+             update_cache: yes
